@@ -1,0 +1,118 @@
+[gd_resource type="AnimationNodeStateMachine" load_steps=43 format=2]
+
+[sub_resource type="AnimationNodeAnimation" id=1]
+animation = "idle"
+
+[sub_resource type="AnimationNodeAnimation" id=2]
+animation = "run_diagonaly(tr)"
+
+[sub_resource type="AnimationNodeAnimation" id=3]
+animation = "run_down"
+
+[sub_resource type="AnimationNodeAnimation" id=4]
+animation = "run_sideways(r)"
+
+[sub_resource type="AnimationNodeAnimation" id=5]
+animation = "run_sideways(r)"
+
+[sub_resource type="AnimationNodeAnimation" id=6]
+animation = "run_up"
+
+[sub_resource type="AnimationNodeAnimation" id=7]
+animation = "slide_sideways"
+
+[sub_resource type="AnimationNodeAnimation" id=8]
+animation = "suit_malfunction"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=9]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=10]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=11]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=12]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=13]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=14]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=15]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=16]
+switch_mode = 2
+auto_advance = true
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=17]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=18]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=19]
+switch_mode = 1
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=20]
+switch_mode = 1
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=21]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=22]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=23]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=24]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=25]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=26]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=27]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=28]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=29]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=30]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=31]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=32]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=33]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=34]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=35]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=36]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=37]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=38]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=39]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=40]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=41]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=42]
+
+[resource]
+states/idle/node = SubResource( 1 )
+states/idle/position = Vector2( 737, 14 )
+states/run_diagonaly(tr)/node = SubResource( 2 )
+states/run_diagonaly(tr)/position = Vector2( 40, 128 )
+states/run_down/node = SubResource( 3 )
+states/run_down/position = Vector2( 258, 295 )
+states/run_sideways(l)/node = SubResource( 4 )
+states/run_sideways(l)/position = Vector2( 768, 305 )
+states/run_sideways(r)/node = SubResource( 5 )
+states/run_sideways(r)/position = Vector2( 763, 149 )
+states/run_up/node = SubResource( 6 )
+states/run_up/position = Vector2( 238, 3 )
+states/slide_sideways/node = SubResource( 7 )
+states/slide_sideways/position = Vector2( 1019.21, 223 )
+states/suit_malfunction/node = SubResource( 8 )
+states/suit_malfunction/position = Vector2( 963, 43 )
+transitions = [ "idle", "run_up", SubResource( 9 ), "idle", "run_down", SubResource( 10 ), "run_down", "idle", SubResource( 11 ), "run_up", "idle", SubResource( 12 ), "run_diagonaly(tr)", "idle", SubResource( 13 ), "idle", "run_diagonaly(tr)", SubResource( 14 ), "idle", "suit_malfunction", SubResource( 15 ), "suit_malfunction", "idle", SubResource( 16 ), "idle", "run_sideways(r)", SubResource( 17 ), "run_sideways(r)", "idle", SubResource( 18 ), "run_sideways(r)", "run_sideways(l)", SubResource( 19 ), "run_sideways(l)", "run_sideways(r)", SubResource( 20 ), "run_sideways(l)", "run_down", SubResource( 21 ), "run_down", "run_sideways(l)", SubResource( 22 ), "run_sideways(r)", "run_down", SubResource( 23 ), "run_down", "run_sideways(r)", SubResource( 24 ), "run_down", "run_diagonaly(tr)", SubResource( 25 ), "run_diagonaly(tr)", "run_down", SubResource( 26 ), "run_up", "run_down", SubResource( 27 ), "run_down", "run_up", SubResource( 28 ), "run_up", "run_sideways(r)", SubResource( 29 ), "run_up", "run_sideways(l)", SubResource( 30 ), "run_sideways(r)", "run_up", SubResource( 31 ), "run_sideways(l)", "run_up", SubResource( 32 ), "run_up", "run_diagonaly(tr)", SubResource( 33 ), "run_diagonaly(tr)", "run_up", SubResource( 34 ), "run_diagonaly(tr)", "run_sideways(r)", SubResource( 35 ), "run_sideways(r)", "run_diagonaly(tr)", SubResource( 36 ), "run_diagonaly(tr)", "run_sideways(l)", SubResource( 37 ), "run_sideways(l)", "run_diagonaly(tr)", SubResource( 38 ), "run_sideways(r)", "slide_sideways", SubResource( 39 ), "slide_sideways", "run_sideways(r)", SubResource( 40 ), "run_sideways(l)", "slide_sideways", SubResource( 41 ), "slide_sideways", "run_sideways(l)", SubResource( 42 ) ]
+start_node = "idle"
+graph_offset = Vector2( -117.794, 0.794564 )

@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Field/Field.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Player/Cosmonaut.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Field/Generator/FieldGenerator.tscn" type="PackedScene" id=3]
+
+[node name="TestScene" type="Node2D"]
+position = Vector2( -1, 0 )
+
+[node name="sorter" type="YSort" parent="."]
+
+[node name="Comsmonaut" parent="sorter" instance=ExtResource( 2 )]
+
+[node name="Field" parent="sorter" instance=ExtResource( 1 )]
+position = Vector2( 28, 0 )
+
+[node name="Field2" parent="sorter" instance=ExtResource( 1 )]
+position = Vector2( -53, 25 )
+
+[node name="Field3" parent="sorter" instance=ExtResource( 1 )]
+position = Vector2( -42, 42 )
+
+[node name="Field4" parent="sorter" instance=ExtResource( 1 )]
+position = Vector2( -39, -12 )
+
+[node name="Field5" parent="sorter" instance=ExtResource( 1 )]
+position = Vector2( 25, 56 )
+
+[node name="FieldGenerator" parent="." instance=ExtResource( 3 )]
+position = Vector2( 328, 55 )
