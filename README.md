@@ -1,3 +1,3 @@
 # swaying-and-flattening-grass
-![example](./swaying_grass.gif)
+![example](./example.gif)
 Examle of swaying and flattening grass done in Godot 3.5
